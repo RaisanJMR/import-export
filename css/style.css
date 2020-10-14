@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;800&display=swap');
+* {
+   box-sizing: border-box;
+}
 body {
    overflow-x: hidden;
 }
@@ -78,8 +81,11 @@ header {
    font-weight: bold;
 }
 .import-head,
-.export-head {
+.export-head,
+#products h1,
+#contact h1 {
    font-family: 'Raleway', sans-serif;
+   font-weight: 800;
 }
 #services .card {
    background: rgba(0, 0, 0, 0.4);
@@ -88,6 +94,35 @@ header {
 }
 #services .card {
    color: rgba(92, 184, 92, 0.8);
+}
+#products .card {
+   border-radius: 0;
+   transition: all 0.2s ease-in;
+}
+#products .card:hover {
+   box-shadow: 0px 2px 10px #cccccc;
+   text-decoration: underline;
+}
+#contact .card {
+   border-radius: 0;
+   transition: all 0.2s ease-in;
+}
+#contact .card:hover {
+   box-shadow: 0 2px 5px #ccc;
+}
+#contact input,
+#contact textarea {
+   border-radius: 0;
+}
+#contact p {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+}
+form h5,
+#contact h6 {
+   font-family: 'Raleway', sans-serif;
+   text-transform: uppercase;
+   font-weight: 500;
 }
 .img-container {
    position: relative;
